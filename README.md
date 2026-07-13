@@ -1,4 +1,4 @@
-# ** 📰 Fake News Detection using Machine Learning and Natural Language Processing
+# 📰 Fake News Detection using Machine Learning and Natural Language Processing
 
 ### A Final Year Major Project
 
