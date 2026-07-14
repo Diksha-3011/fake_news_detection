@@ -98,10 +98,10 @@ news_ml/
 ├── fake_news_detection.py
 ├── README.md
 ├── workflow_diagram.png
-├──data/
+├──OUTPUT.md
+└── data/
     ├──Fake.csv
     └──True.csv
-└── OUTPUT.md
 
 
 
