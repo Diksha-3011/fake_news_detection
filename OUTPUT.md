@@ -23,7 +23,8 @@ The program starts by reading two files of news articles — one full of fake ne
 one full of real news articles — and combines them into a single table so it can study them
 together.
 
-![Uploading image.png…]()
+<img width="426" height="121" alt="Screenshot 2026-07-14 171456" src="https://github.com/user-attachments/assets/8c687736-ba72-407d-9070-b325e8300415" />
+
 
 
 **What this shows:** The fake news file had **23,481 articles**, and the real news file had
