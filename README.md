@@ -1,4 +1,4 @@
-<img width="301" height="245" alt="01_class_distribution" src="https://github.com/user-attachments/assets/abbe913e-deed-4650-9f8a-6ddeee24d3f4" /># 📰 Fake News Detection using Machine Learning and Natural Language Processing
+# 📰 Fake News Detection using Machine Learning and Natural Language Processing
 
 
 
@@ -195,7 +195,7 @@ made available for real-time predictions on new headlines.
    O'Reilly Media. (https://www.nltk.org/)
 
 ---
-![Word cloud fake](images/03_wordcloud_fake.png)
+
 
 
 *End of README — Fake News Detection using Machine Learning and Natural Language Processing.*
