@@ -1,6 +1,6 @@
 # 📰 Fake News Detection using Machine Learning and Natural Language Processing
 
-### A Final Year College Project
+
 
 ---
 
@@ -66,7 +66,6 @@ and used in a simple function that predicts whether a given news headline or art
 
 ## 🔄 Workflow Diagram
 
-![Fake News Detection Workflow Diagram](workflow_diagram.png)
 
 *(Data flows top-to-bottom: raw dataset → labeling → EDA → NLP preprocessing (lowercasing,
 punctuation/number removal, stopword removal, tokenization, lemmatization) → cleaned corpus →
