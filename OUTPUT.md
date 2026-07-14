@@ -38,9 +38,11 @@ learn from — a good, large amount of data.
 Before studying the data, it's important to check nothing is missing or broken — like checking
 all the pages of a book are present before reading it.
 
-![Dataset info](images/10_terminal_dataset_info.png)
+<img width="155" height="134" alt="Screenshot 2026-07-14 171514" src="https://github.com/user-attachments/assets/859f3b45-3e21-41aa-8e58-059f6a5a85a3" />
 
-![Missing values](images/11_terminal_missing_values.png)
+
+<img width="182" height="128" alt="Screenshot 2026-07-14 171525" src="https://github.com/user-attachments/assets/cf6db28d-5284-4833-b848-c307296292cd" />
+
 
 **What this shows:** Every single one of the 44,898 articles has complete information — there are
 **zero missing values** anywhere. This also confirms the article counts: 23,481 fake articles
