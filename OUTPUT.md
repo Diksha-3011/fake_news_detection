@@ -55,7 +55,8 @@ all the pages of a book are present before reading it.
 It helps to see this balance visually — if one category had far more articles than the other, the
 computer might become biased toward guessing that category more often.
 
-![Class distribution](images/01_class_distribution.png)
+<img width="301" height="245" alt="Screenshot 2026-07-14 164833" src="https://github.com/user-attachments/assets/5d12efe3-558a-4875-a142-293a71f57cb7" />
+
 
 **What this shows:** The dataset is fairly balanced — a bit more fake articles than real ones, but
 not by a huge margin. This is good, because it means the computer gets a fair amount of practice
@@ -67,7 +68,8 @@ with both types.
 
 This chart shows how many words a typical article contains.
 
-![Word count histogram](images/02_word_count_histogram.png)
+<img width="607" height="293" alt="Screenshot 2026-07-14 164855" src="https://github.com/user-attachments/assets/21c93a44-bd86-4cbb-9148-70fd46179ef7" />
+
 
 **What this shows:** Most articles are on the shorter side — somewhere between 100 and 500 words
 — with fewer and fewer articles as length increases. This is normal for news articles, which are
@@ -80,9 +82,11 @@ usually written to be concise.
 A "word cloud" is a picture where words that appear more often in the text are shown **bigger**.
 This gives a quick visual sense of what each category of news tends to talk about.
 
-![Word cloud fake](images/03_wordcloud_fake.png)
+<img width="553" height="266" alt="Screenshot 2026-07-14 164914" src="https://github.com/user-attachments/assets/f6a9442b-6846-4230-b73c-4b7678b1c369" />
 
-![Word cloud real](images/04_wordcloud_real.png)
+
+<img width="429" height="222" alt="Screenshot 2026-07-14 164931" src="https://github.com/user-attachments/assets/13f7f3ab-0426-47b9-98fb-f1c64dfb7b9f" />
+
 
 **What this shows:** Both fake and real articles talk a lot about similar big-picture topics
 (politics, Trump, government), which makes sense since this dataset is mostly political news.
@@ -100,7 +104,8 @@ things like punctuation, numbers, and very common filler words (like "the", "is"
 don't carry much meaning. Each word is also reduced to its simplest form (for example, "running"
 becomes "run").
 
-![Top words and cleaning example](images/12_terminal_top_words_cleaning.png)
+<img width="590" height="185" alt="Screenshot 2026-07-14 171720" src="https://github.com/user-attachments/assets/dd4f5d79-07d3-4bc7-ac7d-e7d7ee044d65" />
+
 
 **What this shows:**
 - The top words confirm what the word clouds showed — words like "trump", "said", "president"
@@ -128,7 +133,8 @@ start learning patterns from it.
 Three different learning methods (called "models") were trained separately, so their results
 could be compared:
 
-![TF-IDF and training](images/13_terminal_tfidf_training.png)
+<img width="277" height="143" alt="Screenshot 2026-07-14 171731" src="https://github.com/user-attachments/assets/db42bdcb-5b3b-4f5f-8cd9-e9e1f3a9227e" />
+
 
 **What this shows:** The text was converted into **3,000 number-features** per article, and all
 three models — **Logistic Regression**, **Multinomial Naive Bayes**, and **Linear SVM** —
@@ -152,9 +158,11 @@ real news. A few simple measurements are used:
 
 ### Model 1: Logistic Regression
 
-![Logistic Regression metrics](images/14_terminal_metrics_lr.png)
+<img width="293" height="184" alt="Screenshot 2026-07-14 171742" src="https://github.com/user-attachments/assets/0b5b8e87-d259-4cf4-ab22-f766863035ce" />
 
-![Logistic Regression confusion matrix](images/05_confusion_matrix_lr.png)
+
+<img width="235" height="200" alt="Screenshot 2026-07-14 171312" src="https://github.com/user-attachments/assets/b4bced30-7311-4520-8b47-2d15fc180abe" />
+
 
 **What this shows:** This model got **98.72% accuracy** — meaning out of every 100 articles, it
 correctly guessed about 99 of them. Looking at the confusion matrix: out of 4,696 truly fake
@@ -164,9 +172,11 @@ very strong result.
 
 ### Model 2: Multinomial Naive Bayes
 
-![Naive Bayes metrics](images/15_terminal_metrics_nb.png)
+<img width="263" height="197" alt="Screenshot 2026-07-14 171753" src="https://github.com/user-attachments/assets/1bd7e316-b6af-4a11-9303-e193f3b278d7" />
 
-![Naive Bayes confusion matrix](images/06_confusion_matrix_nb.png)
+
+<img width="233" height="196" alt="Screenshot 2026-07-14 171326" src="https://github.com/user-attachments/assets/b9db325e-4a43-409d-a3f0-8b30becc5f75" />
+
 
 **What this shows:** This model got **93.01% accuracy** — still good, but noticeably lower than
 the other two. Its confusion matrix shows more mix-ups: 296 fake articles were wrongly called
@@ -175,9 +185,11 @@ the three, but here it traded off a bit of accuracy for that simplicity.
 
 ### Model 3: Linear SVM
 
-![Linear SVM metrics](images/16_terminal_metrics_svm.png)
+<img width="256" height="191" alt="Screenshot 2026-07-14 171802" src="https://github.com/user-attachments/assets/41d079bf-33d5-4a29-914c-5ed8de8f07b0" />
 
-![Linear SVM confusion matrix](images/07_confusion_matrix_svm.png)
+
+<img width="233" height="193" alt="Screenshot 2026-07-14 171342" src="https://github.com/user-attachments/assets/81be2ecb-f937-46f1-9bba-7953a5be30f9" />
+
 
 **What this shows:** This model performed the best, with **99.34% accuracy**. Its confusion
 matrix shows only 31 fake articles wrongly called real, and just 28 real articles wrongly called
@@ -187,9 +199,11 @@ fake — out of nearly 9,000 test articles, that's an extremely small number of 
 
 ## Step 9: Comparing All Three Models Side by Side
 
-![Accuracy comparison chart](images/08_accuracy_comparison_chart.png)
+<img width="569" height="298" alt="Screenshot 2026-07-14 171400" src="https://github.com/user-attachments/assets/b0b569de-b241-4525-a29d-e7b33994212a" />
 
-![Comparison table and best model](images/17_terminal_comparison_best_model.png)
+
+<img width="319" height="106" alt="Screenshot 2026-07-14 171814" src="https://github.com/user-attachments/assets/ee9b32d8-fabf-43a0-b225-40027ab2b301" />
+
 
 **What this shows:** All three models did well, but **Linear SVM came out on top** with the
 highest accuracy (99.34%), narrowly beating Logistic Regression (98.72%), with Multinomial Naive
@@ -205,7 +219,8 @@ Finally, the saved model was tested on a few brand-new headlines it had never se
 how it performs in a real, practical scenario. Along with each guess, it also gives a
 **confidence score** — how sure it is about its answer.
 
-![Predictions on new headlines](images/18_terminal_predictions.png)
+<img width="349" height="219" alt="Screenshot 2026-07-14 171837" src="https://github.com/user-attachments/assets/13cfa2e1-a83c-461b-9a6f-d9ff9690a4ae" />
+
 
 **What this shows:**
 
