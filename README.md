@@ -64,7 +64,7 @@ and used in a simple function that predicts whether a given news headline or art
 
 ---
 
-## 🔄 Workflow Diagram
+## 🔄 Workflow 
 
 
 *(Data flows top-to-bottom: raw dataset → labeling → EDA → NLP preprocessing (lowercasing,
