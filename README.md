@@ -115,7 +115,7 @@ news_ml/
 2. Create and activate a virtual environment:
    ```
    python -m venv venv
-   .\venv\Scripts\Activate.ps1        (Windows PowerShell)
+   .\venv\Scripts\Activate.ps1        
    ```
 3. Install the required libraries:
    ```
